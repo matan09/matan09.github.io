@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../cssfiles/stylesheet.css">
+    <script async defer src="../royalRental.js"></script>
+    <title>Royal Rental Car</title>
+    
+    
+    
+   
+</head>
+<body>
+    <div class="container">
+        <div class="row"> <!--start 1st row-->
+            <div class="col-md-12"> <!--start of the first column of the 1st  row-->
+                <div class="jumbotron">
+                    <div id="companyName">
+                        <h1><span class="highlight">Royal</span>Rental Car</h1>
+                    </div>
+        
+                    <nav>
+                        <ul>
+                            <li class="current"><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                        </ul>
+                    </nav>
+        
+                </div>
+            </div><!--end of the first column of the 1st  row-->
+        </div>  <!--start 1st row-->
+
+    
+
+    
+        <!--main section-->
+        <div class="mainContent-wrapper"> <!--main content container-->
+            <div class="row " > <!--start of the second row-->
+                <div class="col-md-6"> <!--start of the 1st column of the  second row-->
+                
+                    <div id="mainRight-side"> <!--start of the main-right side container-->
+                        <h1>welcome to royal rental car!</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                
+                            </p> 
+                    </div> <!--end  of the main-right side container-->
+
+                </div><!--end of first column of the first row-->
+
+                <div class="col-md-6"> <!--start of the 2nd column of the  second row-->
+                    <div class="formHeader">
+                        <h1>Start Your Reservation Here!</h1>
+                    </div>
+
+                    <div class="validation">
+                        <span id="erormsgInfo"></span>
+                    </div>
+                        
+                    <form action="">
+                        <div class="form-check">
+                            <input class="form-control" type="text" list="carMake" placeholder="Select Make" id="vehicleMake" required>
+                            <datalist id="carMake">
+                                <select name="make" id="mk" ></select>
+                                    <option value="Toyota"></option>
+                                    <option value="Chevy"></option>
+                                    <option value="Ford"></option>
+                                    <option value="BMW"></option>
+                                    <option value="Hyundia"></option>
+                                </select>
+                            </datalist>
+                        </div> <!--end of the first input container-->
+
+                        <div class="form-check">
+                            <input class="form-control" type="text" list="year" placeholder="Select a year" id="vehicleYear" required>
+                            <datalist id="year">
+                                <option value="2008"></option>
+                                <option value="2007"></option>
+                                <option value="2006"></option>
+                                <option value="2005"></option>
+                                <option value="2004"></option>
+                                <option value="2003"></option>
+                                <option value="2002"></option>
+                                <option value="2001"></option>
+                                <option value="2000"></option>
+                                </datalist> 
+                        </div> <!--end of the 2nd input container-->
+
+                         <div class="form-check">
+                            <input class="form-control" type="text" list="pickUpCity" id="pickLocation" placeholder="Pickup Location" required>
+                            <datalist id="pickUpCity">
+                                <option value="Hargeisa">Opoosite of the central bank</option>
+                                <option value="Hargeisa">Egal Airport</option>
+                                <option value="Borama"></option>
+                                <option value="Gabiley"></option>   
+                                </datalist> 
+                        </div> <!--end of the 3rd input container-->
+
+                        <div class="form-check">
+                            <input class="form-control" type="text" list="dropOfCity" id="dropOfLocation" placeholder="Drop off Location" required>
+                            <datalist id="dropOfCity">
+                                <option value="Hargeisa">Opoosite of the central bank</option>
+                                <option value="Hargeisa">Egal Airport</option>
+                                <option value="Borama"></option>
+                                <option value="Gabiley"></option>   
+                            </datalist> 
+                        </div> <!--end of the 4th input container-->
+
+                        <div class="form-check">
+                            <input class="form-control" type="date" placeholder="pickup Date" id="dateInput" required>
+                        </div> <!--end of the 5th input container-->
+
+                        <div class="form-check">
+                            <button id="search" type="submit" class="btn btn-primary mt-3">Search</button>
+                        </div> <!--end of the 6th input container-->
+            
+
+                    </form>
+                </div> <!--end of the 2nd column of the 2nd row-->
+                        
+            </div><!--end of the 2nd row-->>
+       
+
+        </div>  <!--of the main content wrapper--> 
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section3Header">
+                    <h1>See Our Vehicles and Prices</h1>
+                 <div>
+                </div>
+            </div> <!--end of 1st row main2 row-->
+        
+        
+
+         <div class="pictureWrapper">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="carPicture">
+                        <div class="car1">
+                            <img src="../img/car1.jpg"  height="150" width="300" alt="">
+                            <div class="carDescription-wrapper">
+                                <h3>Compact cars</h3>
+                                <br>
+                                <p>A collection of easy meneuverable compact cars</p>
+                                <button id="book" type="submit" class="btn btn-primary mt-3">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end of 1st column-->
+
+                <div class="col-md-4">
+                    <div class="carPicture">
+                        <div class="car1">
+                            <img src="../img/car6.jpg"  height="150" width="320" alt="">
+                            <div class="carDescription-wrapper">
+                                <h3>Intermediate SUVs</h3>
+                                <br>
+                                <p>Take a day trip with the family to your favourite cities and learn about the country in a midsize SUV.</p>
+                                <button id="book" type="submit" class="btn btn-primary mt-3">Book Now</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!--end of 2nd column-->
+
+                <div class="col-md-4">
+                    <div class="carPicture">
+                        <div class="car1">
+                            <img src="../img/car7.jpg"  height="150" width="300" alt="">
+                            <div class="carDescription-wrapper">
+                                <h3>Sport cars</h3>
+                                <br>
+                                <p>Arrive in style for a romantic dinner at your favourite place when you rent one of our sport cars</p>
+                                <button id="book" type="submit" class="btn btn-primary mt-3">Book Now</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div> <!--end of 3rd column-->
+
+                
+             </div> <!--end of the second row of the second section or section 3-->
+
+         </div> <!--end picture wrapper-->
+
+         <div class="locationsectionWrapper"> 
+             <div class="row">
+                 <div class="col-md-12">
+                     <div class="locationHeader">
+                         <h1>Royal Rental car Locations</h1>
+                     </div>
+                 </div>
+             </div> <!--end of first row-->
+
+             <div class="mapWrapper">
+                 <div class="row">
+                     <div class="col-md-5">
+                        <div class="maplefttSide">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div> <!--end of rightside-->
+                     </div> <!--end of first column-->
+
+                     <div class="col-md-7">
+                        <div id="map">
+                            
+                        </div>
+                     </div> <!--end of second column-->
+
+                 </div> <!--end of row-->
+
+             </div> <!--end of mapWrapper-->
+
+
+         </div> <!--end of locationsectionWrapper-->
+
+
+         <div class="bottomSectionWrapper">
+             <div class="row">
+                 <div class="col-md-2">
+                     <h4>Popular Searches</h4>
+
+                     <p><a href="">Cargo Van Rental</a></p>
+                     <p><a href="">Long-term Car Rental</a></p>
+                     <p><a href="">Long-term Car Rental</a></p>
+
+
+                 </div> <!--end of first column-->
+
+                 <div class="col-md-2">
+                    <h4>Popular Rental Cars</h4>
+
+                    <p><a href="">Luxuty Car Rental</a></p>
+                     <p><a href="">Economy Car Rental</a></p>
+                     <p><a href="">SUV Rental</a></p>
+                     <p><a href="">Van Rental</a></p>
+
+                 </div> <!--end of 2nd column-->
+
+                 <div class="col-md-2">
+                    <h4>Popular Destinations</h4>
+
+                    <p><a href="">Hargeisa Main Location</a></p>
+                     <p><a href="">Berbera Main Location</a></p>
+                     <p><a href="">Borama Main Location</a></p>
+                     <p><a href="">Gabiley Main Location</a></p>
+
+                 </div> <!--end of 3rd column-->
+
+                 <div class="col-md-2">
+                    <h4>Royal Rental Partners</h4>
+
+                 </div> <!--end 4th column-->
+
+                 <div class="col-md-2">
+                    <h4>RoyalRental Support</h4>
+
+                    <p><a href="">Contact Us</a></p>
+                     <p><a href="">Best Rate Guarantee</a></p>
+                     <p><a href="">Roadside Assistance</a></p>
+                     <p><a href="">Rental Car Fuel Plans</a></p>
+                     <p><a href="">Lost & Found</a></p>
+
+
+                 </div> <!--end of 5th column-->
+
+                 <div class="col-md-2">
+                    <h4>Company Info</h4>
+
+                    <p><a href="">About RoyalRental Car</a></p>
+                     <p><a href="">Careers</a></p>
+                     <p><a href="">Copyright Notices</a></p>
+                     <p><a href="">Terms of Use</a></p>
+                     <p><a href="">Privacy Notice</a></p>
+
+                 </div> <!--end of 6th column-->
+
+
+             </div> <!--end of the first tow-->
+
+         </div> <!--end of bottomsection wrapper-->
+
+
+
+
+
+    </div> <!--end of the container-->
+        
+        
+       
+        
+
+
+
+    
+</body>
+</html>

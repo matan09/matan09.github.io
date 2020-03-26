@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: o;
+    margin: 0;
+    background-color: rgb(169, 169, 169);
+}
+
+
+/*header styles*/
+.jumbotron {
+    background-color: #35424a;
+    color: #ffffff;
+    margin-bottom: 0;
+    border-bottom: #e8491d 3px solid;
+    overflow: hidden;
+
+}
+.jumbotron #companyName{
+    float: left;
+}
+.jumbotron nav{
+    float: right;
+    margin-top: 10px;
+}
+.jumbotron li{
+    float:left;
+    display: inline;
+    padding: 0 20px 0 20px;
+   
+}
+.jumbotron a{
+    color: #ffffff;
+    text-decoration: none; /*take the default under line out*/
+    text-transform: uppercase;
+    font-size: 16px;
+
+}
+.jumbotron #companyName{
+    float: left;
+}
+.jumbotron .highlight, .jumbotron .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+.jumbotron a:hover{
+    color: crimson;
+    font-weight: bold;
+}
+
+/* maincontent section styling*/
+.homeMainsectionWrapper{
+    margin-top: 30px;
+    color: white;
+    border-bottom: 1px solid black;
+
+}
+
+.sectiontwo-wrapper{
+    margin-top: 20px;
+}
+.sectiontwo-wrapper h3{
+    color: crimson;
+    font-weight: bold;
+}
+
+.left-sidewrapper h3{
+    padding-top: 10px;
+}
+
+
+/*bottom section*/
+.bottomSectionWrapper{
+    margin-top: 30px;
+   background-color: rgba(0, 0, 0, 0.945);
+    padding: 20px;
+    color: white;
+    font: bold arial, sans-serif;
+    border-bottom: #e8491d 3px solid;
+
+}
+
+.bottomSectionWrapper a{
+    color: crimson;
+    font-weight: bold;
+   
+    
+}
